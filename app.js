@@ -16,6 +16,10 @@ app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 // set views to views folder
 app.set('views', './views');
+
+// import styles
+app.use(express.static('public'));
+
 // create a route that responds to a get request
 
 app.get('/',
